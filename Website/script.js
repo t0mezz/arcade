@@ -1,29 +1,14 @@
-let ticking = false;
-
-// on window scroll + fire doSomething function per tick and not spamm it
-// to prevent lag in the animation
 window.addEventListener('scroll', function(){
-    value = window.scrollY;
-
-    if (!ticking) {
-        window.requestAnimationFrame(function() {
-          doSomething(value);
-          ticking = false;
-        });
-    
-        ticking = true;
-      }
-});
-
-function doSomething()
-{
     let img = document.getElementById("background-img");
+    let imgBlured = document.getElementById("background-img-blured");
     let border = document.getElementById("main-head");
     let content = document.getElementsByClassName("head-content");
     let logo = document.getElementById("logo");
 
-    img.style = 'object-position: 0px '+(window.scrollY-332.5)*1.05+'px; filter: blur('+(window.scrollY*.03)+'px);'
-    border.style = 'margin: '+(window.scrollY)+'px 0px;'
+    console.log("opacity: " + img.style.opacity);
+
+    img.style = 'object-position: 0px '+(window.scrollY-332.5)*1.05+'px;'
+    imgBlured.style = 'object-position: 0px '+(window.scrollY-332.5)*1.05+'px; opacity: '+(window.scrollY/300)+';'
 
     if(window.scrollY >= 200)
     {
@@ -43,4 +28,4 @@ function doSomething()
         }
         border.classList.remove("main-head-border");
     }
-}
+});

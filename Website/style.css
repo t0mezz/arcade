@@ -6,17 +6,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'poppins';
-    scroll-behavior: smooth;
     background: none;
+    scroll-behavior: smooth;
 }
 
 .main-wrapper {
     height: 0;
     width: 0;
+    text-align: center;
 }
 
 .main-head {
-    position: absolute;
+    position: fixed;
     width: 100%;
     background: none;
     transition:background 0.5s;
@@ -40,6 +41,7 @@ body {
     border-style: solid;
     box-shadow: inset;
     transition: all 0.5s;
+    overflow: hidden;
 }
 
 #start-arcade-button:hover {
@@ -48,7 +50,11 @@ body {
     transition: all 0.5s;
 }
 
-#background-img {
+#background-img-blured {
+    opacity: 0;
+}
+
+.background-img {
     position: absolute;
     height: 80%;
     width: 100%;
