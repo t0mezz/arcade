@@ -50,11 +50,11 @@ body {
 
 #background-img {
     position: absolute;
-    height: 60%;
-    width: 110%;
+    height: 80%;
+    width: 100%;
     object-fit: cover;
     z-index: -1;
-    object-position: 0px -100px;
+    object-position: 0px -350px;
 }
 
 nav {
