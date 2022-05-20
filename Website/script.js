@@ -1,14 +1,16 @@
 window.addEventListener('scroll', function(){
+    let value = window.pageYOffset;
+
     let img = document.getElementById("background-img");
     let imgBlured = document.getElementById("background-img-blured");
     let border = document.getElementById("main-head");
     let content = document.getElementsByClassName("head-content");
     let logo = document.getElementById("logo");
 
-    console.log("opacity: " + img.style.opacity);
+    console.log(value);
 
-    img.style = 'object-position: 0px '+(window.scrollY-332.5)*1.05+'px;'
-    imgBlured.style = 'object-position: 0px '+(window.scrollY-332.5)*1.05+'px; opacity: '+(window.scrollY/300)+';'
+    img.style = 'object-position: 0px '+(value-332.5)*1.05+'px;'
+    imgBlured.style = 'opacity: '+(value/300)+'; object-position: 0px '+(value-332.5)*1.05+'px;'
 
     if(window.scrollY >= 200)
     {

@@ -5,10 +5,12 @@ body {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     background: none;
     scroll-behavior: smooth;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .main-wrapper {
     height: 0;
@@ -56,7 +58,7 @@ body {
 
 .background-img {
     position: absolute;
-    height: 80%;
+    height: 70%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -84,15 +86,32 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin: 0 50px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 nav ul li:hover {
-    transform: scale(1.2,1.2);
-    transition: all 0.5s;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s;
 }
 
 nav ul li a {
     color: #E4E4E4;
     text-decoration: none;
     font-size: 20px;
+}
+
+.table {
+    position: absolute;
+    align-items: center;
+    margin-top: 55%;
+    height: 20%;
+}
+
+.table-column {
+    height: 100px;
+    width: 300px;
+}
+
+table tr td p {
+    color: #E4E4E4;
+    font-size: 25px;
 }
