@@ -3,7 +3,7 @@ window.addEventListener('scroll', function(){
 
     let img = document.getElementById("background-img");
     let imgBlured = document.getElementById("background-img-blured");
-    let border = document.getElementById("main-head");
+    let border = document.getElementById("main-border");
     let content = document.getElementsByClassName("head-content");
     let logo = document.getElementById("logo");
 

@@ -15,10 +15,9 @@ body {
 .main-wrapper {
     height: 0;
     width: 0;
-    text-align: center;
 }
 
-.main-head {
+.main-border {
     position: fixed;
     width: 100%;
     background: none;
@@ -29,21 +28,6 @@ body {
 .main-head-border {
     background: #E4E4E4;
     transition:background 0.5s;
-}
-
-#start-arcade-button {
-    transform-origin: center;
-    position: absolute;
-    font-size: 40px;
-    border-radius: 50px;
-    border-width: 10px;
-    margin:  300px 500px;
-    background: #045757;
-    border-color: #045757;
-    border-style: solid;
-    box-shadow: inset;
-    transition: all 0.5s;
-    overflow: hidden;
 }
 
 #start-arcade-button:hover {
@@ -68,16 +52,17 @@ body {
 nav {
     display: flex;
     align-items: center;
+    margin-right: 30px;
 }
 
 nav .logo-img {
-    margin: 20px;
+    margin: 2%;
     width: 180px;
     flex: 0;
 }
 
 nav ul {
-    margin-right: 50px;
+    margin: 25px 0px;
     text-align: right;
     flex: 1;
 }
@@ -88,6 +73,7 @@ nav ul li {
     margin: 0 50px;
     transition: all 0.3s;
 }
+
 nav ul li:hover {
     transform: scale(1.1,1.1);
     transition: all 0.3s;
@@ -99,27 +85,43 @@ nav ul li a {
     font-size: 20px;
 }
 
-.table {
+.main-content {
+    height: 60%;
+    width: 100%;
     position: absolute;
+    transform: translateY(125%);
+    z-index: 10;
     align-items: center;
-    margin-top: 55%;
+}
+
+.main-content .logos ul li {
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 240px;
+}
+
+.main-content .logos ul li img {
+    width: min-content;
+    height: min-content;
+    height: 140px;
+    width: 140px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 10%;
+    position: absolute;
     height: 20%;
 }
 
-.table-column {
-    height: 100px;
-    width: 300px;
+.table tr td {
+    width: 25%;
 }
 
 table tr td p {
+    width: 30%;
     color: #E4E4E4;
     font-size: 25px;
-}
-.gamelogos {
-  height: 80px
-}
-
-.gamelogos:hover {
-  transform: scale(1.1,1.1);
-  transform: all 0.3s;
+    margin: 0px 50%;
 }
