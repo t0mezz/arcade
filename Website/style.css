@@ -91,6 +91,8 @@ nav ul li a {
     width: 100%;
     position: absolute;
     transform: translateY(125%);
+    z-index: 10;
+    align-items: center;
 }
 
 .main-content .logo-wrapper {
@@ -137,13 +139,4 @@ table tr td p {
 
 .image {
     border-radius: calc(100px / width);
-}
-
-.main-content {
-    height: 60%;
-    width: 100%;
-    position: absolute;
-    transform: translateY(125%);
-    z-index: 10;
-    align-items: center;
 }
