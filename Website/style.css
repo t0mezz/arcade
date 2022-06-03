@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: none;
     scroll-behavior: smooth;
+    color: #fff;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -90,15 +91,23 @@ nav ul li a {
     width: 100%;
     position: absolute;
     transform: translateY(125%);
-    z-index: 10;
-    align-items: center;
+}
+
+.main-content .logo-wrapper {
+    text-align: center;
+}
+
+.main-content .logos {
+    display: inline-block;
+    width: 100%;
+    margin: 0px 0px;
 }
 
 .main-content .logos ul li {
     color: #fff;
     list-style: none;
     display: inline-block;
-    margin: 0px 240px;
+    margin: 0% 10%;
 }
 
 .main-content .logos ul li img {
@@ -108,20 +117,20 @@ nav ul li a {
     width: 140px;
 }
 
+.main-content .table-wrapper {
+    text-align: center;
+}
+
 .table {
-    width: 100%;
-    margin-top: 10%;
-    position: absolute;
-    height: 20%;
+    display: inline-block;
+    margin: 0px 0px;
 }
 
 .table tr td {
-    width: 25%;
+    padding: 20px 70px;
 }
 
 table tr td p {
-    width: 30%;
     color: #E4E4E4;
     font-size: 25px;
-    margin: 0px 50%;
 }
