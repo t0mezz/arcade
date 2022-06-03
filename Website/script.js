@@ -6,12 +6,36 @@ window.addEventListener('scroll', function(){
     let border = document.getElementById("main-border");
     let content = document.getElementsByClassName("head-content");
     let logo = document.getElementById("logo");
+    let imgRetro = document.getElementById("img-retro");
+    let imgHighscore = document.getElementById("img-highscore");
+    let imgUnity = document.getElementById("img-unity");
 
-    console.log(value);
+    if(value <= 400)
+    {
+        console.log(400-Math.sin(value*(Math.PI/2/400))*400);
+    }
 
+    // parallax stuff
     img.style = 'object-position: 0px '+(value-332.5)*1.05+'px;'
     imgBlured.style = 'opacity: '+(value/300)+'; object-position: 0px '+(value-332.5)*1.05+'px;'
 
+    // table infos
+    if(value <= 400)
+    {
+        imgRetro.style = 'transform: translateX('+(400-Math.sin(value*(Math.PI/2/400))*400)+'%);'
+    }
+
+    if(value-200 <= 400)
+    {
+        imgHighscore.style = 'transform: translateX('+-(400-Math.sin((value-200)*(Math.PI/2/400))*400)+'%);'
+    }
+
+    if(value-400 <= 400)
+    {
+        imgUnity.style = 'transform: translateX('+(400-Math.sin((value-400)*(Math.PI/2/400))*400)+'%);'
+    }
+
+    // upper banner opacity
     if(window.scrollY >= 200)
     {
         logo.setAttribute('src', 'assets/logo/logo.svg');

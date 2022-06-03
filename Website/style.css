@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
 body {
     background-color: #222222;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -11,11 +19,9 @@ body {
     color: #fff;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 .main-wrapper {
-    height: 0;
-    width: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .main-border {
@@ -118,6 +124,8 @@ nav ul li a {
     height: min-content;
     height: 140px;
     width: 140px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .main-content .table-wrapper {
@@ -135,11 +143,64 @@ nav ul li a {
 }
 
 table tr td p {
-    color: #888;
+    color: #DDD;
     font-size: 25px;
 }
 
 .image {
     border-radius: 30px;
     width: 270px;
+    user-select: none;
+}
+
+#img-retro {
+    transform: translateX(400%);
+}
+
+#img-highscore {
+    transform: translateX(-450%);
+}
+
+#img-unity {
+    transform: translateX(550%);
+}
+
+.main-bottom {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    transform: translateY(1850px);
+}
+
+.main-bottom .banner {
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background-color: #111;
+    position: absolute;
+}
+
+.main-bottom .banner .content {
+    margin: 70px 50px;
+    text-align: center;
+}
+
+.main-bottom .banner .content ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.main-bottom .banner .content ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 130px;
+}
+
+.main-bottom .banner .content ul li h {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-bottom .banner .content ul li c {
+    font-size: 20px;
 }
