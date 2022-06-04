@@ -193,14 +193,16 @@ table tr td p {
 .main-bottom .banner .content ul li {
     list-style: none;
     display: inline-block;
-    margin: 0px 130px;
+    margin: 5px 130px;
 }
 
 .main-bottom .banner .content ul li h {
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
+    color: #E4E4E4;
 }
 
 .main-bottom .banner .content ul li c {
     font-size: 20px;
+    color: #A4A4A4;
 }
