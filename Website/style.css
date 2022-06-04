@@ -206,3 +206,27 @@ table tr td p {
     font-size: 20px;
     color: #A4A4A4;
 }
+
+.sub-main-border {
+    position: fixed;
+    width: 100%;
+    background: #E4E4E4;
+    z-index: 11;
+}
+
+.sub-head-content {
+  color: #000000;
+}
+
+.sub-main-content {
+  padding-top: 10%;
+
+}
+
+.about h1 {
+  margin: 10px;
+}
+
+.about p {
+  margin: 10px;
+}
