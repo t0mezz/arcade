@@ -1,3 +1,9 @@
+function test()
+{
+    alert(localStorage.getItem("game"));
+    document.getElementById("gameIframe").setAttribute("src",localStorage.getItem("game"));
+}
+
 function enterHall()
 {
     let button=document.getElementById("button-enter");
@@ -6,7 +12,14 @@ function enterHall()
     setTimeout(function() {button.style = "transform: scale(102%);"}, 100)
     img.classList.add("img-banner-enter-zoom");
     img.style = "opacity: 75%;"
-    setTimeout(function() {location.href = "./subpages/hall.html"}, 500 );
+    setTimeout(function() {location.href = "./subpages/hall.html"}, 500);
+}
+
+function openGame(path)
+{
+    alert("Clicked! Go to " + path);
+    localStorage.setItem("game",path);
+    window.open("game.html");
 }
 
 window.addEventListener('scroll', function(){
