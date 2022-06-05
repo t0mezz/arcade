@@ -38,16 +38,6 @@ html, body {
     z-index: 11;
 }
 
-#start-arcade-button:hover {
-    transform-origin: center;
-    transform: scale(1.1,1.1);
-    transition: all 0.5s;
-}
-
-#background-img-blured {
-    opacity: 0;
-}
-
 .background-img {
     position: absolute;
     height: 70%;
@@ -55,6 +45,10 @@ html, body {
     object-fit: cover;
     z-index: -1;
     object-position: 0px -350px;
+}
+
+#background-img-blured {
+    opacity: 0;
 }
 
 nav {
@@ -243,11 +237,12 @@ table tr td p {
     object-fit: cover;
     height: 500px;
     width: 100%;
+    filter: blur(2px);
     transition: all .5s;
 }
 
 #img-banner-enter:hover {
-    filter: blur(2px);
+    filter: blur(0px);
     transition: all 1s;
 }
 
