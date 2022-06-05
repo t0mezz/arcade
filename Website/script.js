@@ -1,9 +1,3 @@
-function test()
-{
-    alert(localStorage.getItem("game"));
-    document.getElementById("gameIframe").setAttribute("src",localStorage.getItem("game"));
-}
-
 function enterHall()
 {
     let button=document.getElementById("button-enter");
@@ -17,10 +11,17 @@ function enterHall()
 
 function openGame(path)
 {
-    alert("Clicked! Go to " + path);
     localStorage.setItem("game",path);
     window.open("game.html");
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    let iframe = document.getElementById("gameIframe");
+    if(iframe != null)
+    {
+        document.getElementById("gameIframe").setAttribute("src",localStorage.getItem("game"));
+    }
+});
 
 window.addEventListener('scroll', function(){
     let value = window.pageYOffset;
