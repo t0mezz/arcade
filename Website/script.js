@@ -6,7 +6,7 @@ function enterHall()
     setTimeout(function() {button.style = "transform: scale(102%);"}, 100)
     img.classList.add("img-banner-enter-zoom");
     img.style = "opacity: 75%;"
-    setTimeout(function() {open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")}, 500 );
+    setTimeout(function() {location.href = "./subpages/hall.html"}, 500 );
 }
 
 window.addEventListener('scroll', function(){
