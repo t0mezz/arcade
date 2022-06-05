@@ -31,7 +31,6 @@ window.addEventListener('scroll', function(){
     imgBlured.style = 'opacity: '+(value/300)+'; object-position: 0px '+(value-332.5)*1.05+'px;'
 
     // table infos
-<<<<<<< HEAD
     if(value-600 <= 400)
     {
         imgRetro.style = 'transform: translateX('+(400-Math.sin((value-600)*(Math.PI/2/400))*400)+'%);'
@@ -45,21 +44,6 @@ window.addEventListener('scroll', function(){
     if(value-1000 <= 400)
     {
         imgUnity.style = 'transform: translateX('+(400-Math.sin((value-1000)*(Math.PI/2/400))*400)+'%);'
-=======
-    if(value <= 400)
-    {
-        imgRetro.style = 'transform: translateX('+(400-Math.sin(value*(Math.PI/2/400))*400)+'%);'
-    }
-
-    if(value-200 <= 400)
-    {
-        imgHighscore.style = 'transform: translateX('+-(400-Math.sin((value-200)*(Math.PI/2/400))*400)+'%);'
-    }
-
-    if(value-400 <= 400)
-    {
-        imgUnity.style = 'transform: translateX('+(400-Math.sin((value-400)*(Math.PI/2/400))*400)+'%);'
->>>>>>> 1d205d4e818f5e615621525b75e3018a0f4f389d
     }
 
     // upper banner opacity
