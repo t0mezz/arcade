@@ -3,16 +3,20 @@ function enterHall()
     let button=document.getElementById("button-enter");
     let img=document.getElementById("img-banner-enter");
     button.style = "transform: scale(100%);"
-    setTimeout(function() {button.style = "transform: scale(102%);"}, 100)
+    setTimeout(function() {button.style = "transform: scale(102%);"}, 100);
     img.classList.add("img-banner-enter-zoom");
     img.style = "opacity: 75%;"
     setTimeout(function() {location.href = "./subpages/hall.html"}, 500);
 }
 
-function openGame(path)
+function openGame(path, id)
 {
+    var img = document.getElementById(id);
+    img.style = "transform: scale(102%);"
+    img.classList.add("img-overlay-zoom");
+    setTimeout(function() {img.style = "transform: scale(100%);"}, 200);
     localStorage.setItem("game",path);
-    window.open("game.html");
+    setTimeout(function() {window.open("game.html");}, 400+200);
 }
 
 document.addEventListener("DOMContentLoaded", function(){
