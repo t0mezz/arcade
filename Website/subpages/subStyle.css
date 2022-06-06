@@ -206,3 +206,8 @@ nav ul li a {
 img {
     -webkit-user-drag: none;
 }
+
+.main-bottom a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: #a4a4a4;
+}
