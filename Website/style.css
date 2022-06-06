@@ -163,7 +163,7 @@ table tr td p {
     position: absolute;
     width: 100%;
     height: 40%;
-    bottom: calc(-100% - 1000px);
+    bottom: calc(-100% - 950px);
 }
 
 .main-bottom .banner {
@@ -248,9 +248,4 @@ table tr td p {
 
 .img-banner-enter-zoom {
     transition: all .5s;
-}
-
-.main-bottom .banner .content ul li c a {
-  text-decoration: none;
-  color: #a4a4a4;
 }

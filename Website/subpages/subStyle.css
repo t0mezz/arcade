@@ -113,7 +113,7 @@ nav ul li a {
     margin-top: 150px;
     width: 100%;
     height: 40%;
-    bottom: -250px;
+    bottom: -200px;
 }
 
 .main-bottom .banner {
@@ -205,9 +205,4 @@ nav ul li a {
 
 img {
     -webkit-user-drag: none;
-}
-
-.main-bottom .banner .content ul li c a {
-    text-decoration: none;
-    color: #a4a4a4;
 }
