@@ -249,3 +249,8 @@ table tr td p {
 .img-banner-enter-zoom {
     transition: all .5s;
 }
+
+.main-bottom a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: #a4a4a4;
+}
